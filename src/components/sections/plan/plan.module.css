@@ -1,0 +1,205 @@
+.work {
+    padding: 40px;
+    background: var(--color-bg);
+}
+
+.container {
+    max-width: 1640px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-family: var(--font-main);
+    font-size: var(--font-size-h2);
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 30px;
+    color: var(--color-text);
+}
+
+/* сетка 4 в строку */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+/* сама карточка */
+.step {
+    background: var(--color-bg-card);
+    border-radius: 20px;
+    padding: 35px 20px 35px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 108px;
+    gap: 10px;
+    border: 1px solid var(--color-primary);
+}
+
+.stepContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.stepTitle {
+    font-family: var(--font-menu);
+    font-size: var(--font-size-h3);
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.stepIcon {
+    width: 60px;
+    height: 46px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.stepText {
+    font-family: var(--font-menu);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-text);
+    max-width: 229px;
+    margin-bottom: 0px;
+}
+
+/* адаптив */
+@media (max-width: 1200px) {
+    .work {
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 1120px;
+    }
+
+    .heading {
+        margin-bottom: 30px;
+    }
+
+    .grid {
+        gap: 20px;
+    }
+
+    .step {
+        padding: 10px 10px 24px 20px;
+        display: flex;
+        height: 168px;
+        width: 264px;
+        gap: 10px;
+    }
+
+    .stepTitle {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .stepIcon {
+        width: 52px;
+        height: 33px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    .stepText {
+        font-size: 16px;
+        max-width: 229px;
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 800px) {
+    .work {
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 757px;
+    }
+
+    .heading {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .step {
+        padding: 20px 20px 40px 20px;
+        display: flex;
+        height: 138px;
+        width: 329px;
+        gap: 10px;
+    }
+
+    .stepTitle {
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .stepIcon {
+        width: 62px;
+        height: 46px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    .stepText {
+        font-size: 16px;
+        max-width: 229px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .work {
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 332px;
+    }
+
+    .heading {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .step {
+        padding: 10px 10px 25px 10px;
+        display: flex;
+        height: 138px;
+        width: 140px;
+        gap: 10px;
+    }
+
+    .stepTitle {
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 45px;
+    }
+
+    .stepIcon {
+        width: 39px;
+        height: 27px;
+        object-fit: contain;
+        flex-shrink: 0;
+        margin-right: 30px;
+    }
+
+    .stepText {
+        font-size: 12px;
+        max-width: 229px;
+        margin-bottom: 0px;
+    }
+}

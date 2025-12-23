@@ -1,0 +1,18 @@
+:root {
+  /* цвета */
+  --color-primary: #BBFF4D;
+  --color-secondary: #84B436;
+  --color-accent: #ffffff;
+  --color-text: #ffffff;
+  --color-text2: #000000;
+  --color-bg: #121212;
+  --color-bg-card: #1D1D1D;
+
+  /* шрифты */
+  --font-main: 'Unbounded', sans-serif;
+  --font-menu: 'Montserrat', sans-serif;
+  --font-size-h1: 96px;
+  --font-size-base: 24px;
+  --font-size-h2: 48px;
+  --font-size-h3: 28px;
+}

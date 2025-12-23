@@ -18,7 +18,7 @@
   height: 58px; 
 }
 
-.nav {
+.navDesk {
     display: flex;
     gap: 40px;
 }

@@ -6,7 +6,7 @@ import IconLinkedIn from '../../../images/link.svg';
 import IconTelegram from '../../../images/tg.svg';
 
 const Contacts = () => (
-  <section className={s.contacts}>
+  <section id='contacts' className={s.contacts}>
     <div className={s.container}>
       <h2 className={s.title}>КОНТАКТЫ</h2>
 

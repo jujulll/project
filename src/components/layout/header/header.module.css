@@ -55,6 +55,57 @@
     font-weight: 500;
 }
 
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 20;
+}
+
+.line {
+  width: 24px;
+  height: 3px;
+  background: var(--color-text);
+  transition: 0.3s;
+}
+
+/* крестик */
+.cross1 { transform: rotate(45deg) translate(5px, 5px); }
+.cross2 { opacity: 0; }
+.cross3 { transform: rotate(-45deg) translate(7px, -6px); }
+
+/* ========== мобильное меню ========== */
+.navMob {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0 2rem;
+  background: var(--color-bg);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  transform: translateY(-150%);
+  transition: transform 0.3s;
+}
+
+.navMob.open {
+  transform: translateY(0);
+}
+
+.mobLink {
+  font-family: var(--font-menu);
+  font-size: 18px;
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+}
+
+
 
 @media (max-width: 1200px) {
     .container {
@@ -87,5 +138,10 @@
 }
 
 @media (max-width: 375px) {
-
+    @media (max-width: 375px) {
+  .burger { display: flex; }
+  .navDesk { display: none; }
+  .navMob { display: flex; }
+  .cta { display: none; }   /* скрываем кнопку «ОСТАВИТЬ ЗАЯВКУ» */
+}
 }

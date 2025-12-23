@@ -96,23 +96,63 @@ const Calc = () => {
           </div>
 
           {/* ---------- правая колонка ---------- */}
-          <div className={styles.right}>
-            <div className={styles.totalBox}>
-              <div className={styles.totalLabel}>Итого:</div>
-              <div className={styles.totalAmount}>{total.toLocaleString()} ₽</div>
 
-              <ul className={styles.list}>
-                <li>Анализ конкурентов</li>
-                <li>Продающая структура</li>
-                {opts.design && <li>Уникальный дизайн</li>}
-                {opts.form && <li>Настройка форм заявок</li>}
-                {opts.direct && <li>Настройка Яндекс.Директ</li>}
-                {opts.telegram && <li>Интеграция Telegram/CRM</li>}
-              </ul>
 
-              <button className={styles.orderBtn}>ЗАКАЗАТЬ РАЗРАБОТКУ</button>
-            </div>
-          </div>
+<div className={styles.right}>
+  {/* ВАША СМЕТА */}
+  <div className={styles.totalBox}>
+    <h3 className={styles.totalTitle}>ВАША СМЕТА</h3>
+    <p className={styles.totalSub}>Детализация стоимости</p>
+
+    <div className={styles.divider} />
+
+    {/* выбранный радио-бокс */}
+    <div className={styles.radioLine}>
+      <span className={styles.lineTitle}>{BASE.find(p => p.id === project)?.name}</span>
+      <span className={styles.linePrice}>{BASE.find(p => p.id === project)?.price.toLocaleString()} ₽</span>
+    </div>
+
+    {/* «В базу входит» + галочки */}
+    <p className={styles.includesTitle}>В базу входит:</p>
+    <ul className={styles.checkList}>
+      <li>Анализ конкурентов</li>
+      <li>Продающая структура</li>
+      <li>Уникальный дизайн</li>
+      <li>Адаптивная верстка</li>
+      <li>Настройка форм заявок</li>
+      <li>Домен в подарок</li>
+    </ul>
+
+    {/* «Дополнительные услуги» (динамика) */}
+    {Object.keys(opts).filter(k => opts[k]).length > 0 && (
+      <>
+        <div className={styles.dashedDivider} />
+        <p className={styles.optsTitle}>Дополнительные услуги</p>
+        <ul className={styles.optList}>
+          {Object.keys(opts)
+            .filter(k => opts[k])
+            .map(k => (
+              <li key={k}>
+                <span className={styles.optName}>{OPTIONS[k].title}</span>
+                <span className={styles.optPrice}>{OPTIONS[k].price.toLocaleString()} ₽</span>
+              </li>
+            ))}
+        </ul>
+      </>
+    )}
+
+    {/* пунктир + ИТОГО */}
+    <div className={styles.dashedDivider} />
+    <div className={styles.totalLine}>
+      <span className={styles.totalLabel}>ИТОГО:</span>
+      <span className={styles.totalAmount}>{total.toLocaleString()} ₽</span>
+    </div>
+
+    {/* кнопка + мелкий текст */}
+    <button className={styles.orderBtn}>ЗАКАЗАТЬ РАЗРАБОТКУ</button>
+    <p className={styles.smallPrint}>*Финальная стоимость фиксируется в договоре</p>
+  </div>
+</div>
         </div>
       </div>
     </section>

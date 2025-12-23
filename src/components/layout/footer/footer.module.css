@@ -1,0 +1,46 @@
+.footer {
+    background: var(--color-bg-card);
+    height: 70px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.text {
+    font-family: var(--font-menu);
+    margin: 25px;
+    font-size: 16px;
+    color: var(--color-text);
+    opacity: 60%;
+}
+
+@media (max-width: 1200px) {
+    .footer {
+        height: 60px;
+    }
+
+    .text {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer {
+        height: 37px;
+    }
+
+    .text {
+        margin: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    .footer {
+        height: 20px;
+    }
+
+    .text {
+        margin: 0px;
+        font-size: 14px;
+    }
+}

@@ -1,12 +1,12 @@
 .form1 {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     background: var(--color-bg);
 }
 
 .box {
     max-width: 1640px;
-    height: 629px;
+    height: 609px;
     margin: 0 auto;
     background: var(--color-bg);
     border: 2px solid var(--color-primary);
@@ -142,6 +142,7 @@
   .row textarea {
     width: 350px;
   }
+
   .btn {
     width: 414px;
   }
@@ -169,24 +170,36 @@
 }
 
 @media (max-width: 375px) {
+    .form1 {
+        padding-top: 0px;
+    }
   .box {
     max-width: 335px;
-    grid-template-columns: 1fr;
+    height: 744px;
+    grid-template-columns: 1fr;   
+    gap: 0px; 
+    border-radius: 20px;
   }
   .title {
+    max-width: 310px;
     font-size: 28px;
+    margin-left: 10px;
   }
   .text {
+    margin-left: 10px;
     font-size: 16px;
+    margin-bottom: 0px;
   }
   .form {
-    margin-left: 0;
+    margin-left: 10px;
   }
   .row input,
   .row textarea {
-    width: 100%;
+    padding: 10px 15px;
+    width: 281px;
   }
   .btn {
-    width: 100%;
+    width: 315px;
+    height: 40px;
   }
 }

@@ -1,3 +1,4 @@
+/* общее */
 .portfolio {
     padding: 70px;
     background: var(--color-bg);
@@ -8,6 +9,7 @@
     margin: 0 auto;
 }
 
+/* заголовок */
 .heading {
     font-family: var(--font-main);
     font-size: var(--font-size-h2);
@@ -17,12 +19,14 @@
     color: var(--color-text);
 }
 
+/* сетка */
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 
+/* карточка */
 .card {
     background: var(--color-bg-card);
     width: 520px;
@@ -31,6 +35,11 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    transition: scale 0.3s;
+}
+
+.card:hover {
+    scale: 1.03;
 }
 
 .pic {
@@ -60,6 +69,7 @@
     max-width: 456px;
 }
 
+/* адаптив 1200-800-375 */
 @media (max-width: 1200px) {
     .portfolio {
         padding: 50px;

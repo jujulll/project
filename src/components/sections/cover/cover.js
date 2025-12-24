@@ -1,10 +1,9 @@
 import React from 'react';
 import styles from './cover.module.css';
-import bgPic from '../../../images/print.svg';   // ← своя картинка
+import bgPic from '../../../images/print.svg';
 
 const Cover = () => (
   <section className={styles.cover}>
-    {/* центрированный контент */}
     <div className={styles.content}>
       <h1 className={styles.title}>
         <span className={styles.white}>Разработка сайтов</span>
@@ -17,10 +16,10 @@ const Cover = () => (
       </p>
 
       <div className={styles.btnRow}>
-        <button className={`${styles.btn} ${styles.btn1}`}>
+        <button className={`${styles.btn} ${styles.btn1}`} onClick={() => document.getElementById('order').scrollIntoView({ behavior: 'smooth' })}>
           Оставить заявку
         </button>
-        <button className={`${styles.btn} ${styles.btn2}`}>
+        <button className={`${styles.btn} ${styles.btn2}`} onClick={() => document.getElementById('calc').scrollIntoView({ behavior: 'smooth' })}>
           Получить расчет
         </button>
       </div>

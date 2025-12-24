@@ -13,6 +13,7 @@
     opacity: 60%;
 }
 
+/* адаптив 1200-800-375 */
 @media (max-width: 1200px) {
     .footer {
         height: 60px;

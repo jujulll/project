@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './contacts.module.css';
-
 import IconBehance  from '../../../images/behance.svg';
 import IconLinkedIn from '../../../images/link.svg';
 import IconTelegram from '../../../images/tg.svg';

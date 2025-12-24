@@ -1,3 +1,4 @@
+/* общее */
 .work {
     padding: 40px;
     background: var(--color-bg);
@@ -8,6 +9,7 @@
     margin: 0 auto;
 }
 
+/* заголовкок */
 .heading {
     font-family: var(--font-main);
     font-size: var(--font-size-h2);
@@ -17,14 +19,14 @@
     color: var(--color-text);
 }
 
-/* сетка 4 в строку */
+/* сетка 4 - 1 */
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
 }
 
-/* сама карточка */
+/* карточка */
 .step {
     background: var(--color-bg-card);
     border-radius: 20px;
@@ -67,7 +69,7 @@
     margin-bottom: 0px;
 }
 
-/* адаптив */
+/* адаптив 1200-800-375 */
 @media (max-width: 1200px) {
     .work {
         padding: 20px;
@@ -157,7 +159,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
     .work {
         padding: 20px;
     }
@@ -178,7 +180,7 @@
     .step {
         padding: 10px 10px 25px 10px;
         display: flex;
-        height: 138px;
+        height: 108px;
         width: 140px;
         gap: 10px;
     }
@@ -186,20 +188,20 @@
     .stepTitle {
         font-size: 20px;
         margin-bottom: 10px;
-        margin-top: 45px;
+        margin-top: 15px;
     }
 
     .stepIcon {
-        width: 39px;
-        height: 27px;
+        width: 0px;
+        height: 0px;
         object-fit: contain;
         flex-shrink: 0;
-        margin-right: 30px;
     }
 
     .stepText {
         font-size: 12px;
         max-width: 229px;
         margin-bottom: 0px;
+        margin-top: 0px;
     }
 }

@@ -1,8 +1,10 @@
+/* общее */
 .about {
     padding-top: 50px;
     background: var(--color-bg);
 }
 
+/* прямоугольник */
 .outer {
     max-width: 1560px;
     height: 488px;
@@ -16,6 +18,7 @@
     align-items: center;
 }
 
+/* текст */
 .title {
     font-family: var(--font-main);
     font-size: var(--font-size-h2);
@@ -30,6 +33,7 @@
     color: var(--color-text2);
 }
 
+/* фото */
 .imgBox {
     width: 620px;
     height: 100%;
@@ -42,6 +46,7 @@
     object-fit: cover;
 }
 
+/* адаптив 1200-800-375 */
 @media (max-width: 1200px) {
     .outer {
         max-width: 1060px;

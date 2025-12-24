@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <img src={logo} alt="Логотип" className={styles.logo} />
+        <img src={logo} alt="Логотип" className={styles.logo} />     {/* логотип */}
 
         {/* десктопное меню */}
         <nav className={styles.navDesk}>
@@ -53,7 +53,7 @@ const Header = () => {
         </div>
 
         {/* кнопка «ОСТАВИТЬ ЗАЯВКУ» (скрыта на 375 px) */}
-        <button className={styles.cta}>ОСТАВИТЬ ЗАЯВКУ</button>
+        <button className={styles.cta} onClick={() => document.getElementById('order').scrollIntoView({ behavior: 'smooth' })}>ОСТАВИТЬ ЗАЯВКУ</button>
       </div>
     </header>
   );

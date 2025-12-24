@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './order.module.css';
 
-// выпадающий список
+{/* выпадающий список */}
 const SITE_TYPES = [
   { value: '', label: 'Ничего не выбрано' },
   { value: 'landing', label: 'Landing Page' },
@@ -20,14 +20,14 @@ const Order = () => {
   });
 
   const [errors, setErrors] = useState({});
-  const [status, setStatus] = useState('idle'); // idle | loading | success
+  const [status, setStatus] = useState('idle'); // статус отправки
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setForm((f) => ({ ...f, [name]: type === 'checkbox' ? checked : value }));
     setErrors((e) => ({ ...e, [name]: '' }));
   };
-
+  {/* валидация js */}
   const validate = () => {
     const e = {};
     if (!form.name.trim()) e.name = 'Укажите имя и фамилию';
@@ -46,12 +46,9 @@ const Order = () => {
     const errs = validate();
     setErrors(errs);
     if (Object.keys(errs).length) return;
-
     setStatus('loading');
-    // имитация запроса
     setTimeout(() => {
       setStatus('success');
-      // поля НЕ очищаем!
     }, 1200);
   };
 
@@ -66,7 +63,7 @@ const Order = () => {
           </p>
         </div>
 
-        {/* правая колонка – форма */}
+        {/* форма */}
         <form className={styles.form} onSubmit={handleSubmit} noValidate>
           <div className={styles.row}>
             <label className={styles.label}>Имя и Фамилия</label>
@@ -130,7 +127,7 @@ const Order = () => {
               onChange={handleChange}
             />
             <span>Я согласен на обработку моих персональных данных в соответствии 
-с Условиями договора оферты и Политикой обработки персональных данных</span>
+              с Условиями договора оферты и Политикой обработки персональных данных</span>
           </label>
           {errors.agree && <span className={styles.Checkerr}>{errors.agree}</span>}
 

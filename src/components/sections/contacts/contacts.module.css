@@ -1,3 +1,4 @@
+/* общее */
 .contacts {
     background: var(--color-bg);
     padding: 20px 20px;
@@ -8,6 +9,7 @@
     margin: 0 auto;
 }
 
+/* заголовок */
 .title {
     text-align: left;
     font-family: var(--font-main);
@@ -17,6 +19,7 @@
     font-weight: 500;
 }
 
+/* две колонки с информацией */
 .columns {
     display: flex;
     justify-content: left;
@@ -26,6 +29,7 @@
     flex-wrap: wrap;
 }
 
+/* колонка с названиями */
 .col1 p {
     font-family: var(--font-menu);
     font-size: var(--font-size-base);
@@ -34,6 +38,7 @@
     opacity: 60%;
 }
 
+/* колонка с данными */
 .col2 p {
     font-family: var(--font-menu);
     font-size: var(--font-size-base);
@@ -41,6 +46,7 @@
     color: var(--color-text);
 }
 
+/* соцсети */
 .socials {
     display: flex;
     justify-content: left;
@@ -58,6 +64,7 @@
     transform: scale(1.15);
 }
 
+/* адаптив 1200-800-375 */
 @media (max-width: 1200px) {
     .container {
         max-width: 1120px;

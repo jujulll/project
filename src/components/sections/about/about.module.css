@@ -47,7 +47,7 @@
 }
 
 /* адаптив 1200-800-375 */
-@media (max-width: 1200px) {
+@media (max-width: 1900px) {
     .outer {
         max-width: 1060px;
         height: 541px;
@@ -75,7 +75,7 @@
     }   
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     .outer {
         max-width: 698px;
         height: 840px;
@@ -105,7 +105,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 800px) {
     .outer {
         max-width: 295px;
         height: 733px;

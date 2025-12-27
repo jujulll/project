@@ -14,7 +14,7 @@
 }
 
 /* адаптив 1200-800-375 */
-@media (max-width: 1200px) {
+@media (max-width: 1900px) {
     .footer {
         height: 60px;
     }
@@ -24,7 +24,7 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     .footer {
         height: 37px;
     }
@@ -35,7 +35,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 800px) {
     .footer {
         height: 20px;
     }

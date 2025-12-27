@@ -119,7 +119,7 @@
 
 
 /* адаптив 1200-800-375 */
-@media (max-width: 1200px) {
+@media (max-width: 1900px) {
     .container {
         max-width: 1120px;
         height: 90px;
@@ -130,7 +130,7 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     .container {
         max-width: 760px;
         height: 75px;
@@ -149,7 +149,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 800px) {
     .burger { 
         display: flex; 
     }

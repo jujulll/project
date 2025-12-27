@@ -70,7 +70,7 @@
 }
 
 /* адаптив 1200-800-375 */
-@media (max-width: 1200px) {
+@media (max-width: 1900px) {
     .work {
         padding: 20px;
     }
@@ -113,7 +113,7 @@
         margin-bottom: 0px;
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     .work {
         padding: 20px;
     }
@@ -159,7 +159,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 800px) {
     .work {
         padding: 20px;
     }

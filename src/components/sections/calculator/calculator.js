@@ -146,7 +146,7 @@ const Calc = () => {
               </div>
 
               {/* кнопка + мелкий текст */}
-              <button className={styles.orderBtn}>ЗАКАЗАТЬ РАЗРАБОТКУ</button>
+              <button className={styles.orderBtn} onClick={() => document.getElementById('order').scrollIntoView({ behavior: 'smooth' })}>ЗАКАЗАТЬ РАЗРАБОТКУ</button>
               <p className={styles.smallPrint}>*Финальная стоимость фиксируется в договоре</p>
             </div>
           </div>

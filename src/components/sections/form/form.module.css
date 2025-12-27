@@ -127,7 +127,7 @@
 }
 
 /* адаптив 1200-800-375 */
-@media (max-width: 1200px) {
+@media (max-width: 1900px) {
   .form1 {
     padding-top: 40px;
   }
@@ -152,7 +152,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .box {
     max-width: 760px;
     grid-template-columns: 338px 334px;
@@ -177,7 +177,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 800px) {
   .form1 {
     padding-top: 0px;
   }

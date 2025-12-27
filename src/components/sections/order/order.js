@@ -32,7 +32,7 @@ const Order = () => {
     const e = {};
     if (!form.name.trim()) e.name = 'Укажите имя и фамилию';
     if (!form.phone.trim()) e.phone = 'Укажите телефон';
-    if (!/^\+?\d{10,15}$/.test(form.phone.replace(/\s/g, '')))
+    if (!/^(?:\+7|8)\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$/.test(form.phone))
       e.phone = 'Неверный формат телефона';
     if (!form.email.trim()) e.email = 'Укажите e-mail';
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = 'Неверный e-mail';

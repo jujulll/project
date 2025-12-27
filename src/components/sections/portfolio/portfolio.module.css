@@ -70,7 +70,7 @@
 }
 
 /* адаптив 1200-800-375 */
-@media (max-width: 1200px) {
+@media (max-width: 1900px) {
     .portfolio {
         padding: 50px;
     }
@@ -107,7 +107,7 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     .portfolio {
         padding: 0px;
         padding-top: 40px;
@@ -146,7 +146,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 800px) {
     .portfolio {
         padding: 0px;
         padding-top: 40px;

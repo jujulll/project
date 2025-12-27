@@ -98,7 +98,7 @@
 }
 
 /* адаптив 1200-800-375 */
-@media (max-width: 1200px) {
+@media (max-width: 1900px) {
     .cover {
         height: 772px;
     }
@@ -136,7 +136,7 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     .cover {
         height: 626px;
     }
@@ -176,7 +176,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 800px) {
     .cover {
         height: 418px;
     }
